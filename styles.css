@@ -1,0 +1,154 @@
+#header{
+    background-color: #c84230;
+    
+}
+#header .navbar{
+display: flex;
+justify-content: flex-end;
+}
+#header .navbar > ul{
+    display: inline-flex;
+    list-style: none;
+    justify-content: flex-end;
+   
+    }
+#header .navbar > ul > li{
+    
+    flex-direction: row;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    
+    
+}
+#header .navbar > ul > li > button{
+ color:red;
+ background-color: #fff;
+
+ border: 2px solid white;
+    
+}
+#header .navbar > ul > li > button:hover{
+   background-color: darkred;
+
+       
+   }
+
+.imagdisplay{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 5rem;
+}
+.imagdisplay .p1{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagdisplay .p1 >img{
+   border-radius: 48%;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8533d;
+    color: #fff;
+    
+}
+#footer .icons{
+    
+    flex-direction: row;
+    
+    height: 2.9rem;
+    padding-right: 1.2rem;
+  
+}
+#footer .icons >img{
+
+    border-radius: 46%;
+    
+    
+}
+#footer .copy{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.2rem;
+    
+}
+#footer .copy > h4{
+   font-family: 'Times New Roman', Times, serif;
+}
+
+@media all and (max-width: 500px){
+
+   
+    #header .navbar > ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+        
+      
+        flex-basis: 100%;
+
+               
+    }
+    #header .navbar >ul > li{
+        padding-top: 1rem;
+        
+    }
+  
+
+    .imagdisplay .p1 {
+        display: flex;
+       
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 1.6rem;
+       
+     
+    }
+    .imagdisplayc.p1 >h3 , h4{
+        justify-content: center;
+    }
+    .imagdisplay .p1 >img{
+        flex-shrink: 1;
+    }
+    
+}
+@media all and (max-width: 800px){
+    #header .navbar > ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+          
+    }
+    #header .navbar >ul > li{
+        padding-top: 1rem;
+        padding-left: 10px;
+        
+        /* flex-direction: column; */
+        
+    }
+    /* .imagdisplay {
+        display: flex;
+       
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+     
+    } */
+    .imagdisplay .p1 {
+        display: flex;
+       
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+       
+     
+    }
+}
+
